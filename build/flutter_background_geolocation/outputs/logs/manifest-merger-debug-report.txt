@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml:2:3-61
+		INJECTED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml
+		INJECTED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml:5:5-65
+	android:label
+		ADDED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml:5:18-50
+uses-sdk
+INJECTED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml
+INJECTED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml
+		ADDED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml
+		INJECTED from D:\Programms\Flutter SDK\.pub-cache\hosted\pub.dartlang.org\flutter_background_geolocation-1.4.2\android\src\main\AndroidManifest.xml
