@@ -1,0 +1,367 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.safe_journey"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="29" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+16    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\194abaa6f180aa3134acccf0232fe3ab\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:13:5-79
+17-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\194abaa6f180aa3134acccf0232fe3ab\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:13:22-76
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->[:geolocator] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+18-->[:geolocator] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+19-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
+20-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-78
+21    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+21-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\cccc2ca513af5f319b61d09f0e6aa32c\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:24:5-68
+21-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\cccc2ca513af5f319b61d09f0e6aa32c\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:24:22-65
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+22-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:26:5-82
+22-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:26:22-79
+23
+24    <uses-feature
+24-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\dcba90777f038885e6802ebfc59a9f79\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+25        android:glEsVersion="0x00020000"
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\dcba90777f038885e6802ebfc59a9f79\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+26        android:required="true" />
+26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\dcba90777f038885e6802ebfc59a9f79\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+27
+28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+28-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:26:5-110
+28-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:26:22-107
+29    <!--
+30 io.flutter.app.FlutterApplication is an android.app.Application that
+31         calls FlutterMain.startInitialization(this); in its onCreate method.
+32         In most cases you can leave this as-is, but you if you want to provide
+33         additional functionality it is fine to subclass or reimplement
+34         FlutterApplication and put your custom class here.
+35         android:name="io.flutter.app.FlutterApplication"
+36          MyApplication
+37    -->
+38    <application
+38-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:11:5-43:19
+39        android:name="com.example.safe_journey.MyApplication"
+39-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:12:9-38
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.0.2] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\8121a9e0f12c15eaa6732ba68f2a5ee5\core-1.0.2\AndroidManifest.xml:22:18-86
+41        android:debuggable="true"
+42        android:icon="@mipmap/ic_launcher"
+42-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:14:9-43
+43        android:label="Safe journey" >
+43-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:13:9-37
+44        <meta-data
+44-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:15:9-16:70
+45            android:name="com.google.android.geo.API_KEY"
+45-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:15:20-65
+46            android:value="AIzaSyCLA8duiHgwlRDvdLC4oyfuTmQPiSFxni0" />
+46-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:16:13-68
+47        <meta-data
+47-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:17:9-19:63
+48            android:name="com.google.firebase.messaging.default_notification_channel_id"
+48-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:18:13-89
+49            android:value="default_notification_channel_id" />
+49-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:19:13-60
+50
+51        <activity
+51-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:20:9-42:20
+52            android:name="com.example.safe_journey.MainActivity"
+52-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:21:13-41
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:24:13-144
+54            android:hardwareAccelerated="true"
+54-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:25:13-47
+55            android:launchMode="singleTop"
+55-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:22:13-43
+56            android:theme="@style/LaunchTheme"
+56-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:23:13-47
+57            android:windowSoftInputMode="adjustResize" >
+57-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:26:13-55
+58
+59            <!--
+60                 This keeps the window background of the activity showing
+61                 until Flutter renders its first frame. It can be removed if
+62                 there is no splash screen (such as the default splash screen
+63                 defined in @style/LaunchTheme).
+64            -->
+65            <meta-data
+65-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:31:13-33:40
+66                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
+66-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:32:17-82
+67                android:value="true" />
+67-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:33:17-37
+68
+69            <intent-filter>
+69-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:34:13-37:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:35:17-68
+70-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:35:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:36:17-76
+72-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:36:27-74
+73            </intent-filter>
+74            <intent-filter>
+74-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:38:13-41:29
+75                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+75-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:39:17-69
+75-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:39:25-66
+76
+77                <category android:name="android.intent.category.DEFAULT" />
+77-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:40:17-76
+77-->C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\android\app\src\main\AndroidManifest.xml:40:27-73
+78            </intent-filter>
+79        </activity>
+80
+81        <service
+81-->[:cloud_firestore] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+82            android:name="com.google.firebase.components.ComponentDiscoveryService"
+82-->[:cloud_firestore] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+83            android:directBootAware="true"
+83-->[com.google.firebase:firebase-common:19.1.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\7c0c65810a5ec29fed498807b45d1cf8\firebase-common-19.1.0\AndroidManifest.xml:14:13-43
+84            android:exported="false" >
+84-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\194abaa6f180aa3134acccf0232fe3ab\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:19:13-37
+85            <meta-data
+85-->[:cloud_firestore] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+86                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
+86-->[:cloud_firestore] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[:cloud_firestore] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+88            <meta-data
+88-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\194abaa6f180aa3134acccf0232fe3ab\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:20:13-22:85
+89                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+89-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\194abaa6f180aa3134acccf0232fe3ab\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:21:17-111
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-firestore:21.1.1] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\194abaa6f180aa3134acccf0232fe3ab\jetified-firebase-firestore-21.1.1\AndroidManifest.xml:22:17-82
+91            <meta-data
+91-->[:firebase_auth] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+92                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+92-->[:firebase_auth] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[:firebase_auth] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\fc9106351014efd57f9dec0bee348c03\firebase-auth-19.0.0\AndroidManifest.xml:36:13-38:85
+95                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+95-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\fc9106351014efd57f9dec0bee348c03\firebase-auth-19.0.0\AndroidManifest.xml:37:17-109
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\fc9106351014efd57f9dec0bee348c03\firebase-auth-19.0.0\AndroidManifest.xml:38:17-82
+97            <meta-data
+97-->[:firebase_storage] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+98                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+98-->[:firebase_storage] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[:firebase_storage] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+100            <meta-data
+100-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-16:85
+101                android:name="com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar"
+101-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-127
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-82
+103            <meta-data
+103-->[:firebase_core] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+104                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+104-->[:firebase_core] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[:firebase_core] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\bec26c8c6e3c21b7e7e3704da7579235\jetified-firebase-storage-17.0.0\AndroidManifest.xml:31:13-33:85
+107                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+107-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\bec26c8c6e3c21b7e7e3704da7579235\jetified-firebase-storage-17.0.0\AndroidManifest.xml:32:17-107
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\bec26c8c6e3c21b7e7e3704da7579235\jetified-firebase-storage-17.0.0\AndroidManifest.xml:33:17-82
+109            <meta-data
+109-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\cccc2ca513af5f319b61d09f0e6aa32c\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:30:13-32:85
+110                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+110-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\cccc2ca513af5f319b61d09f0e6aa32c\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:31:17-139
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\cccc2ca513af5f319b61d09f0e6aa32c\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:32:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:32:13-34:85
+113                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+113-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:33:17-96
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:34:17-82
+115        </service>
+116
+117        <activity
+117-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\fc9106351014efd57f9dec0bee348c03\firebase-auth-19.0.0\AndroidManifest.xml:24:9-31:50
+118            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+118-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\fc9106351014efd57f9dec0bee348c03\firebase-auth-19.0.0\AndroidManifest.xml:25:13-85
+119            android:excludeFromRecents="true"
+119-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\fc9106351014efd57f9dec0bee348c03\firebase-auth-19.0.0\AndroidManifest.xml:26:13-46
+120            android:exported="true"
+120-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\fc9106351014efd57f9dec0bee348c03\firebase-auth-19.0.0\AndroidManifest.xml:27:13-36
+121            android:launchMode="singleTask"
+121-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\fc9106351014efd57f9dec0bee348c03\firebase-auth-19.0.0\AndroidManifest.xml:28:13-44
+122            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+122-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\fc9106351014efd57f9dec0bee348c03\firebase-auth-19.0.0\AndroidManifest.xml:29:13-102
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\fc9106351014efd57f9dec0bee348c03\firebase-auth-19.0.0\AndroidManifest.xml:30:13-72
+124
+125        <service android:name="io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService" >
+125-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+125-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-101
+126            <intent-filter>
+126-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:29
+127                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+127-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-78
+127-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:25-75
+128            </intent-filter>
+129        </service>
+130
+131        <activity
+131-->[:url_launcher] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+132            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+132-->[:url_launcher] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+133            android:exported="false"
+133-->[:url_launcher] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+134            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+134-->[:url_launcher] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+135
+136        <provider
+136-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-19:20
+137            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+137-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-82
+138            android:authorities="com.example.safe_journey.flutter.image_provider"
+138-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-74
+139            android:exported="false"
+139-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+140            android:grantUriPermissions="true" >
+140-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-47
+141            <meta-data
+141-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-18:75
+142                android:name="android.support.FILE_PROVIDER_PATHS"
+142-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+143                android:resource="@xml/flutter_image_picker_file_paths" />
+143-->[:image_picker] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
+144        </provider>
+145        <!--
+146             FirebaseMessagingService performs security checks at runtime,
+147             but set to not exported to explicitly avoid allowing another app to call it.
+148        -->
+149        <service
+149-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\22524562f10d2410385dddfe6cd2bbcd\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:28:9-34:19
+150            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+150-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\22524562f10d2410385dddfe6cd2bbcd\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:29:13-82
+151            android:exported="false" >
+151-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\22524562f10d2410385dddfe6cd2bbcd\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:30:13-37
+152            <intent-filter android:priority="-500" >
+152-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:29
+153                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+153-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-78
+153-->[:firebase_messaging] C:\Users\Khaled Asfur\Documents\GitHub\safe_journey_proj\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:25-75
+154            </intent-filter>
+155        </service>
+156
+157        <receiver
+157-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:37:9-44:20
+158            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+158-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:38:13-78
+159            android:exported="true"
+159-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:39:13-36
+160            android:permission="com.google.android.c2dm.permission.SEND" >
+160-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:40:13-73
+161            <intent-filter>
+161-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:41:13-43:29
+162                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+162-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:42:17-81
+162-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\e4da3f6febac07a25e2a282c75052bed\firebase-iid-20.0.0\AndroidManifest.xml:42:25-78
+163            </intent-filter>
+164        </receiver>
+165
+166        <provider
+166-->[com.google.firebase:firebase-common:19.1.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\7c0c65810a5ec29fed498807b45d1cf8\firebase-common-19.1.0\AndroidManifest.xml:17:9-21:39
+167            android:name="com.google.firebase.provider.FirebaseInitProvider"
+167-->[com.google.firebase:firebase-common:19.1.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\7c0c65810a5ec29fed498807b45d1cf8\firebase-common-19.1.0\AndroidManifest.xml:18:13-77
+168            android:authorities="com.example.safe_journey.firebaseinitprovider"
+168-->[com.google.firebase:firebase-common:19.1.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\7c0c65810a5ec29fed498807b45d1cf8\firebase-common-19.1.0\AndroidManifest.xml:19:13-72
+169            android:exported="false"
+169-->[com.google.firebase:firebase-common:19.1.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\7c0c65810a5ec29fed498807b45d1cf8\firebase-common-19.1.0\AndroidManifest.xml:20:13-37
+170            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+170-->[com.google.firebase:firebase-common:19.1.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\7c0c65810a5ec29fed498807b45d1cf8\firebase-common-19.1.0\AndroidManifest.xml:21:13-36
+171        <uses-library
+171-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\dcba90777f038885e6802ebfc59a9f79\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+172            android:name="org.apache.http.legacy"
+172-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\dcba90777f038885e6802ebfc59a9f79\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+173            android:required="false" />
+173-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\dcba90777f038885e6802ebfc59a9f79\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+174
+175        <activity
+175-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\147916af8a905c4e15af657e5fb3e6df\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+176            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+176-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\147916af8a905c4e15af657e5fb3e6df\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+177            android:exported="false"
+177-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\147916af8a905c4e15af657e5fb3e6df\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+178            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+178-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\147916af8a905c4e15af657e5fb3e6df\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+179
+180        <receiver
+180-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:29:9-33:20
+181            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+181-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:30:13-85
+182            android:enabled="true"
+182-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:31:13-35
+183            android:exported="false" >
+183-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:32:13-37
+184        </receiver>
+185        <receiver
+185-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:34:9-42:20
+186            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+186-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:35:13-100
+187            android:enabled="true"
+187-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:36:13-35
+188            android:exported="true"
+188-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:37:13-36
+189            android:permission="android.permission.INSTALL_PACKAGES" >
+189-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:38:13-69
+190            <intent-filter>
+190-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:39:13-41:29
+191                <action android:name="com.android.vending.INSTALL_REFERRER" />
+191-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:40:17-79
+191-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:40:25-76
+192            </intent-filter>
+193        </receiver>
+194
+195        <service
+195-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:44:9-47:40
+196            android:name="com.google.android.gms.measurement.AppMeasurementService"
+196-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:45:13-84
+197            android:enabled="true"
+197-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:46:13-35
+198            android:exported="false" />
+198-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:47:13-37
+199        <service
+199-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:48:9-52:72
+200            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+200-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:49:13-87
+201            android:enabled="true"
+201-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:50:13-35
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:51:13-37
+203            android:permission="android.permission.BIND_JOB_SERVICE" />
+203-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\ae2af30177316a698395fd3657617556\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:52:13-69
+204
+205        <meta-data
+205-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\be2141db335472d3f2cb8af2c9b68792\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+206            android:name="com.google.android.gms.version"
+206-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\be2141db335472d3f2cb8af2c9b68792\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+207            android:value="@integer/google_play_services_version" />
+207-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Khaled Asfur\.gradle\caches\transforms-2\files-2.1\be2141db335472d3f2cb8af2c9b68792\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+208    </application>
+209
+210</manifest>
